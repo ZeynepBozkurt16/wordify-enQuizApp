@@ -98,7 +98,7 @@ const ForgotPasswordPage: NextPage = () => {
       >
         {!successfulCreation && (
           <>
-            <label htmlFor='email'>Please provide your email address</label>
+            <label htmlFor='email'>Please provide your e-mail address</label>
             <input
               type='email'
               placeholder='e.g john@doe.com'
