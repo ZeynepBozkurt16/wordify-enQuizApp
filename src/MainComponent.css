@@ -1,0 +1,126 @@
+.background{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: pink;
+}
+.loading_text{
+    text-align:center;
+    font-weight: 700;
+}
+.container-main{
+    margin-top: 25vh;
+    border:1px solid black;
+    border-radius: 1em;
+    padding: 2em;
+    background-color: antiquewhite;
+    margin-bottom: 2em;
+}
+.buttonAdd{
+    user-select: none;
+    -moz-user-select: none; /* For Mozilla Firefox */
+    -ms-user-select: none; /* For Microsoft Edge */
+    -webkit-user-select: none;
+    all:unset;
+    border:1px solid black;
+    text-align: center;
+    border-radius: 0.3em;
+    width:6em;
+    background-color: purple;
+    font-weight: 500;
+    display:block;
+    margin: auto;
+    color:white;
+    cursor: pointer;
+    height:1.5em;
+}
+.buttonFinish{
+    all:unset;
+    border:1px solid black;
+    text-align: center;
+    border-radius: 0.3em;
+    width:6em;
+    background-color: purple;
+    font-weight: 500;
+    display:block;
+    margin-right: 1em;
+    margin-left:auto;
+    color:white;
+    margin-top:1em;
+    cursor: pointer;
+    height:2em;
+}
+.buttonRemove{
+    all:unset;
+    border:1px solid black;
+    text-align: center;
+    border-radius: 0.3em;
+    width:6em;
+    background-color: purple;
+    font-weight: 500;
+    display:block;
+    margin: auto;
+    color:white;
+    margin-top:1em;
+    cursor: pointer;
+    height:1.5em;
+}
+.activate:active{
+    background-color: #811000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+img{
+    display:flex;
+    margin-left: auto;
+    margin-right:auto;
+    align-self: center;
+}
+.titleMain{
+    text-align: center;
+}
+.buttonGoDown{
+    position:fixed;
+    top:3em;
+    right:1em;
+    width: 3em;
+    height: 3em;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrowImg{
+    max-width: 70%;
+    max-height: 70%;
+}
+.simpleBox{
+    position: fixed;
+    top: -11rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25rem;
+    height: 10.2rem;
+    background: linear-gradient(to right, rgb(254,153,169),rgb(244, 143, 159));
+    color: white;
+    border-radius: 0 0 2em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border: 1px solid white;
+    z-index: 1000;
+}
+.animatedBox{
+    animation: slideDownUp 3s ease-in-out;
+}
+@keyframes slideDownUp {
+    0% { top: -10rem; }
+    30% { top: 0; }
+    70% { top: 0; }
+    100% { top: -10rem; }
+}
